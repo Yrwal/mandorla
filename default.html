@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+	
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">	    
+    <meta id="viewport" name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { padding-top: 5rem; }
+        .starter-template { padding: 3rem 1.5rem; text-align: center; }
+
+        .hide { display:none; }
+
+        /* Inline Edit */
+		.hover { border: solid 1px #cccccc; margin:-1px; border-radius:.35rem; }        
+    </style>    
+</head>
+
+<body>
+    <nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+        
+        <a class="navbar-brand" href="#">Source Management Demo</a>
+
+        <ul class="nav navbar-nav hide">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <div class="starter-template">
+            <h1>Easily edit your website inline</h1>
+            <p class="lead">Edit you website inline. When you save, it simply saves the html back to the source file.</p>
+        </div>
+
+        <h1>Getting Started</h1>
+        <div id="demo-1" class="editable"><p>Hover over your editable text block and click to edit when the text highlights.</p>
+<p>Enter your new code into the wysiwig editor. To save, just click away!</p></div>
+
+
+        <h2>Multiple on a page</h2>
+        <div id="demo-2" class="editable"><p>You must have different id's for the div's. The plugin initialises on class name.&nbsp;</p></div>
+
+    </div>
+    
+    <form>
+        <input type="hidden" name="hiddenField">
+    </form>
+
+    <!--<script src="js/jquery-2.0.0.min.js"></script>-->
+    <script src="js/jquery-1.12.min.js"></script>
+    <script src="js/tinymce/tinymce.min.js"></script>
+    <script src="js/tinymce/jquery.tinymce.min.js"></script>
+    <script src="js/base-plugin.js"></script>
+
+    <script>
+        $('.editable').initInlineEditor({service : 'service/HtmlDocumentService.asmx/UpdateHtmlDocument'});
+    </script>
+</body>
+</html>
