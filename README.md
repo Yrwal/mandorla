@@ -58,5 +58,6 @@ Call the inline editor!
 
 #TODO
 - login
+- security
 
-- php version
+- php version?
