@@ -56,3 +56,7 @@ Call the inline editor!
       - capture new content
       - Ajax call to webservice and save new content 
 
+#TODO
+- login
+
+- php version
