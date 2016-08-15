@@ -1,11 +1,11 @@
-# mandorla
+# gist
 Inline Source Editor. 
 
-Simple edit in place components that save right back to your source file!
+Simple edit in place components that save right back to your source file! 
 
 1. Write your html/js/css website as a static site. 
-2. Add in some editable content areas and you can edit content inline.
-3. Changes are saved back to the html file. No need data files or databases.
+2. Add in some editable content areas so you can edit content inline.
+3. Changes are saved back to the html file. No need for data files or databases.
    
   Warning! You want to make changes on a staging server only and then publish files live.
 
